@@ -3,20 +3,18 @@ package com.th.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class MainController {
 @GetMapping("")
-public String welcompage(Model m)
+public String saywelcome()
 {
-	String name="bill gates"; 
-	m.addAttribute("nom",name);
-return "first";	
+	
+return "First";	
 }
-
-
-	
-	
-	
+@GetMapping("controls")
+public String contorls()
+{
+return "controllers";	
+}
 }

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
-<h1>welcome</h1>
-<a href="controls" >les controlleurs</a>
-<a href="etudiant" >les etudiants</a>
+Affichage de student:
+<p th:utext="${etudiant.toString()}"></p>
 
 </body>
 </html>
